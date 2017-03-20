@@ -19,6 +19,7 @@ class PostsController < ApplicationController
   end
   
   def show
+    @post_author = "#{@post.user.first_name} #{@post.user.last_name}"
   end
   
   def edit
