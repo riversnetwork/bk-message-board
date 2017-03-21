@@ -14,7 +14,8 @@
       <% @post.each do |post| %>
         <div class="well">
           <h2><%= post.title %></h2>
-            <%= link_to "View Post", post_path(post), class: "btn btn-info" %>
+          <p>Posted by <%= "#{post.user.first_name} #{post.user.last_name}"  %> on <%= post.created_at.strftime("%A, %B %y, %Y at %r") %></p>
+          <%= link_to "View Post", post_path(post), class: "btn btn-info" %>
         </div>
       <% end %>
     </div>
