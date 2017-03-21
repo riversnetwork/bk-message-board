@@ -16,4 +16,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-abbr, accronym{ border-bottom: 0px !important; }
+
+body {
+  background-image: image-url("site-bg.png"); 
+}
+
+#welcome {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #000;
+}
+
+abbr, accronym {
+  border-bottom: 0px !important;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #bbb;
+    margin: 1em 0;
+    padding: 0; 
+}
+

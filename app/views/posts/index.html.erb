@@ -1,5 +1,5 @@
 <% if !user_signed_in? %>
-  <div class="jumbotron">
+  <div class="jumbotron" id="welcome">
     <h1>Welcome to the Message Board</h1>
     <p>This is where we have awesome discussions about a variety of subjects. Feel free to look around, and please log in or sign up if you would like to post a new topic, or reply to an existing conversation.</p>
     <div class="text-center">
@@ -10,11 +10,12 @@
   
 <% end %>
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-xs-12">
       <% @post.each do |post| %>
         <div class="well">
           <h2><%= post.title %></h2>
-          <p>Posted by <%= "#{post.user.first_name} #{post.user.last_name}"  %> on <%= post.created_at.strftime("%A, %B %y, %Y at %r") %></p>
+          <p>Posted by <%= "#{post.user.first_name} #{post.user.last_name}"  %>
+          <br><%= post.created_at.strftime("%A, %B %y, %Y at %r") %></p>
           <%= link_to "View Post", post_path(post), class: "btn btn-info" %>
         </div>
       <% end %>
