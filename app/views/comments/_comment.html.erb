@@ -1,6 +1,6 @@
 <p><%= comment.content%></p>
 <p>Posted by <%= "#{comment.user.first_name} #{comment.user.last_name}" %>
-<br><%= comment.created_at.strftime("%A, %B %y, %Y at %r") %></p>
+<br><%= comment.created_at.strftime("%A, %B %d, %Y at %r") %></p>
 
 <% if user_signed_in? %>
   <% if comment.user_id == current_user.id %>
