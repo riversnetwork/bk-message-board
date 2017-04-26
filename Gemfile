@@ -30,9 +30,11 @@ group :development, :test do
   gem 'byebug'
   # Add rspec-rails to test and development 
   gem 'rspec-rails', '~> 3.5'
-  # Install Capybara
+  # Install Capybara for feature testing
   gem 'capybara'
+  # Add factory_girl_rails for fixtures replacement
   gem 'factory_girl_rails', '~> 4.5'
+  # Add faker for generating data
   gem 'faker'
 end
 
