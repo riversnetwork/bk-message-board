@@ -16,8 +16,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# Install Capybara
-gem 'capybara'
 # Use simple form
 gem 'simple_form'
 # Add Bootstrap Sass
@@ -32,6 +30,10 @@ group :development, :test do
   gem 'byebug'
   # Add rspec-rails to test and development 
   gem 'rspec-rails', '~> 3.5'
+  # Install Capybara
+  gem 'capybara'
+  gem 'factory_girl_rails', '~> 4.5'
+  gem 'faker'
 end
 
 group :development do
